@@ -1,34 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Promptopia
+Promptopia is an open-source AI prompting tool for the modern world, designed to help users discover, create, and share creative prompts. With Promptopia, you have access to a comprehensive list of phenomenal prompts that you can immediately pass on to Chat GPT. This application is built using the Next.js framework and offers full-stack CRUD functionality.
 
-## Getting Started
+![image](https://github.com/Valentina-Peralta/promptopia/assets/125395224/20741244-194e-4969-9120-7d09990c92a8)
 
-First, run the development server:
+## Features
+- **User Authentication:** Promptopia supports authentication using NextAuth and Google authentication. Users can securely log in to the application using their Google accounts.
+- **Browse and Search Prompts:** Once logged in, users can browse through a wide range of the best prompts available. The application provides search functionality to allow users to find prompts based on tags, usernames, or prompt content.
+- **Copy and Edit Prompts:** For each prompt, users can easily copy the prompt content to their clipboard. If the user is the creator of a specific prompt, they also have the ability to edit or delete the prompt.
 
-```bash
+## Installation
+To run Promptopia locally, follow these steps:
+
+- Clone the repository:
+git clone https://github.com/your-username/promptopia.git
+
+- **Install the dependencies**:
+  
+cd promptopia
+npm install
+
+- **Set up environmental variables:**
+  
+  Create a **'.env'** file in the root directory.
+  
+  Add the following variables to the file:
+
+GOOGLE_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+MONGODB_URI=your-mongodb-uri
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL_INTERNAL=http://localhost:3000
+NEXTAUTH_SECRET=3whPterlgXyQVN8lLAtWvMudfy8SCZxvonFQT0AHUCc=
+
+Replace **your-google-client-id**, **your-google-client-secret**, and **your-mongodb-uri** with your own values.
+
+
+- **Start the app:**
+  
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies used:
+- Next.js
+- MongoDB and Mongoose
+- Bcrypt
+- NextAuth
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  # Promptopia is built based on the JavaScriptMastery course, which provided the foundation for developing this application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
