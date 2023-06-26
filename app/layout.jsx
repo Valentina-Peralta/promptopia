@@ -6,12 +6,13 @@ import Provider from '@/components/Provider'
 
 export const metadata = {
     title: "Promptopia",
-    description: "Discover and share AI prompts"
+    description: "Discover and share AI prompts",
 }
 
 const RootLayout = ({ children }) => {
     return (
-        <html lang='en'>
+        <html lang='en'
+        >
 
             <body>
                 <Provider>

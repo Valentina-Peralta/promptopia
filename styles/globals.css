@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.app {
+    font-family: 'Roboto', sans-serif;
+}
+
 .main {
     width: 100vw;
     min-height: 100vh;
@@ -43,6 +49,7 @@
 
 h1 {
     font-size: 3rem;
+    font-weight: 900;
 }
 
 a {
@@ -106,6 +113,23 @@ nav {
     -webkit-background-clip: text;
     color: transparent;
 
+
+}
+
+.blue_gradient {
+    background-image: linear-gradient(to right, #10045c, #2633eb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.grey_text {
+    color: grey;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .gradient {
@@ -197,12 +221,15 @@ textarea {
     display: flex;
     justify-content: space-between;
     height: 4rem;
+    align-items: center;
 }
 
 .creator_profile {
     display: flex;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
+
 }
 
 .creator_info {
@@ -217,12 +244,23 @@ textarea {
     margin: 0;
 }
 
+.prompt_options {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
 .rounded {
     border-radius: 50%;
 }
 
 .tag {
     color: rgb(5, 5, 182);
+    cursor: pointer;
+}
+
+.copy_btn {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 640px) {
